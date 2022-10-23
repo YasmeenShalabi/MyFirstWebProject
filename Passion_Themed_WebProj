@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science</title>
+    <style>
+        body{
+            margin: 40px 50px ;
+            border-radius: 4px;
+            padding:20px white;
+            font-size: 30px;
+            font-weight: 100px;
+            line-height: 40px;
+            border:1px solid ;
+            background: linear-gradient(69.8deg, rgb(25, 49, 108) 2.8%, rgb(1, 179, 201) 97.8%);    
+        }
+        h2{
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 30px ;
+           background: linear-gradient(69.8deg, rgb(25, 49, 108) 2.8%, rgb(1, 179, 201) 97.8%);    
+        }
+        h1{
+            padding-top: 20px;
+        }
+        div{
+            background: white;
+            margin: 20px 100px;
+            padding: 20px;
+        }
+        span{
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            max-width: 100%;
+        }
+        button{
+            padding: 15px;
+            font-size: 30px;
+            color: white;
+            background:linear-gradient(69.8deg, rgb(25, 49, 108) 2.8%, rgb(1, 179, 201) 97.8%);
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto; 
+            box-shadow: 0.5;
+            transition: all 200ms ease;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        }
+        p{
+            text-align: center;
+        }
+        button:hover{
+            cursor: pointer; 
+            color:blue;
+            background: white;
+        }
+</style>
+  </head>
+  <div><body>
+    <span> <h1>I love Learning!</h1>
+    <h2>Especially Computer Science</h2></span>
+   <hr>
+    <img
+    src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/358/original/cs.jpg?1660253510
+    alt="human computer interaction" width=350/>
+    <hr>
+    <p>
+      In 1984, <em>37%</em> of all students graduating with degrees in computer
+      and information sciences were women. However, they comprised of
+      <em>less than half</em> of that by 2010, as the industry was more willing
+      to hire men.
+      <hr>
+      <a class="cs" href="https://www.britannica.com/science/computer-science" target="_blank">
+       <em><strong>Computer science</strong></em> </a>
+      is the study of how computers work, which includes software, hardware, and
+      algorithms. It is the greatest tool that will help us uncover solutions to
+      many of the world's challenging problems. Learning computer
+      science can lead to a career in software development, game development,
+      cybersecurity, artificial intelligence, web and app development, and so
+      much more. All it takes is a great idea combined with coding knowledge to
+      positively change the world!
+    </p>
+    <br />
+    <button>
+        Start Coding!
+    </button>
+<p>    Coded by <a href="https://www.linkedin.com/in/yasmeen-shalabi-4668a918b/" target="_blank"> Yasmeen Shalabi </a> using HTML, CSS, and JavaScript
+</p>
+  </body></div>
+  
+  <script>
+    function tryCoding(){
+        let answer=prompt("Have you ever tried coding? (yes/no)")
+        answer=answer.toLowerCase()
+        answer=answer.trim()
+        if (answer === "yes"){
+            alert("Great job, keep on learning to code!")
+
+        }
+        else{
+            alert("You should definitely try She Codes!") 
+        }
+    }
+    let button=document.querySelector("button")
+    button.addEventListener("click",tryCoding)
+  </script>
+</html>
